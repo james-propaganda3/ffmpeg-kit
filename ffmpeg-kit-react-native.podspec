@@ -14,7 +14,8 @@ Pod::Spec.new do |s|
   s.requires_arc      = true
   s.static_framework  = true
 
-  s.source       = { :git => "https://github.com/james-propaganda3/ffmpeg-kit.git", :tag => "react.native.v#{s.version}" }
+#   s.source       = { :git => "https://github.com/james-propaganda3/ffmpeg-kit.git", :tag => "react.native.v#{s.version}" }
+  s.vendored_frameworks = "ios/Frameworks/ffmpegkit.xcframework"
 
   s.default_subspec   = 'https'
 
