@@ -19,7 +19,16 @@ Pod::Spec.new do |s|
   # s.source = { ... }
 
   # Reference your built xcframework (adjust path if needed)
-  s.vendored_frameworks = 'ios/Frameworks/ffmpegkit.xcframework'
+  s.vendored_frameworks = [
+    "**/binaries/ffmpegkit.xcframework",
+    "**/binaries/libavcodec.xcframework",
+    "**/binaries/libavdevice.xcframework",
+    "**/binaries/libavfilter.xcframework",
+    "**/binaries/libavformat.xcframework",
+    "**/binaries/libavutil.xcframework",
+    "**/binaries/libswresample.xcframework",
+    "**/binaries/libswscale.xcframework",
+  ]
 
   s.source_files = '**/FFmpegKitReactNativeModule.m', '**/FFmpegKitReactNativeModule.h'
 
