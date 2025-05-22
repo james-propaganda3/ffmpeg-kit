@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.homepage     = package["homepage"]
   s.license      = package["license"]
   s.authors      = package["author"]
+  s.source       = package["source"]
 
   s.platform          = :ios, '12.1'
   s.requires_arc      = true

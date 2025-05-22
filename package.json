@@ -5,7 +5,9 @@
   "main": "src/index",
   "types": "src/index.d.ts",
   "react-native": "src/index",
-  "source": "src/index",
+  "source": {
+    "path": "src/index"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
