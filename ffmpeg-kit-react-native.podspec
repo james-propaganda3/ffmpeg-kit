@@ -15,8 +15,7 @@ Pod::Spec.new do |s|
   s.requires_arc      = true
   s.static_framework  = true
 
-  # No remote source required since using local framework
-  # s.source = { ... }
+  s.source = { :path => "." }
 
   # Reference your built xcframework (adjust path if needed)
   s.vendored_frameworks = [
